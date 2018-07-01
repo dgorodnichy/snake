@@ -28,7 +28,7 @@ class Game < Gosu::Window
   end
 
   def check_status
-    (@apple.x-10 .. @apple.x+10).include?(@snake.x) && (@apple.y-10 .. @apple.y+20).include?(@snake.y)
+    (@apple.x-10 .. @apple.x+10).include?(@snake.x) && (@apple.y-10 .. @apple.y+10).include?(@snake.y)
   end
 
   def change_direction
